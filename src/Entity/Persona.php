@@ -123,6 +123,15 @@ class Persona
         return $this;
     }
 
+    public function __toString(): string
+    {
+        $nombrecompleto = $this->Nombre." ".$this->Apellidos;
+        if (isset($this->Apodo) && $this->Apodo !== '') {
+            $nombrecompleto .= " (".$this->Apodo.")";
+        }
+
+        return $nombrecompleto;
+    }
     /**
      * @return Collection<int, Relacionpersona>
      */

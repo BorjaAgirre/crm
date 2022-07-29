@@ -15,7 +15,7 @@
         <tbody>
         {% for relacionpersona in relacionpersonas %}
             <tr>
-                <td>{{ relacionpersona.id }}</td>
+                <td>{{ relacionpersona }}</td>
                 <td>
                     <a href="{{ path('app_relacionpersona_show', {'id': relacionpersona.id}) }}">show</a>
                     <a href="{{ path('app_relacionpersona_edit', {'id': relacionpersona.id}) }}">edit</a>

@@ -47,4 +47,10 @@ class Relacioncolectivo
 
         return $this;
     }
+
+    public function __toString(): string
+    {
+        $tostring = $this->Persona->getNombre()." -> ".$this->Colectivo->getNombre();
+        return $tostring;
+    }
 }

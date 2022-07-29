@@ -43,6 +43,11 @@ class Colectivo
         return $this;
     }
 
+    public function __toString(): string
+    {
+        return $this->Nombre;
+    }
+
     /**
      * @return Collection<int, Relacioncolectivo>
      */

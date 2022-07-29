@@ -32,4 +32,9 @@ class Genero
 
         return $this;
     }
+
+    public function __toString(): string
+    {
+        return $this->Genero;
+    }
 }

@@ -8,14 +8,14 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
+                <th>Relación</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for relacioncolectivo in relacioncolectivos %}
             <tr>
-                <td>{{ relacioncolectivo.id }}</td>
+                <td>{{ relacioncolectivo }}</td>
                 <td>
                     <a href="{{ path('app_relacioncolectivo_show', {'id': relacioncolectivo.id}) }}">show</a>
                     <a href="{{ path('app_relacioncolectivo_edit', {'id': relacioncolectivo.id}) }}">edit</a>

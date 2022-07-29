@@ -62,4 +62,11 @@ class Relacionpersona
 
         return $this;
     }
+
+    public function __toString(): string
+    {
+        $tostring = $this->Persona1->getNombre()." -> ".$this->Persona2->getNombre().
+            " (".$this->Tiporelacion->getTipo().")";
+        return $tostring;
+    }
 }
