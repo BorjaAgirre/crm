@@ -50,7 +50,7 @@ class Relacioncolectivo
 
     public function __toString(): string
     {
-        $tostring = $this->Persona->getNombre()." -> ".$this->Colectivo->getNombre();
+        $tostring = $this->Persona->getNombre()." ".$this->Persona->getApellidos()." -> ".$this->Colectivo->getNombre();
         return $tostring;
     }
 }

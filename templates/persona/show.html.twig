@@ -31,6 +31,18 @@
                 <th>Comentarios</th>
                 <td>{{ persona.Comentarios }}</td>
             </tr>
+            <tr>
+                <th>Relaciones personas</th>
+            </tr>            
+            {% for item in relacionespersona %}
+                <tr><td>{{ item.tiporelacion }} de {{ item.persona2 }} </td></tr>
+            {% endfor %}      
+            <tr>
+                <th>Relaciones colectivos</th>
+            </tr>            
+            {% for item in relacionescolectivo %}
+                <tr><td>{{ item.colectivo }} </td></tr>
+            {% endfor %}                     
         </tbody>
     </table>
 

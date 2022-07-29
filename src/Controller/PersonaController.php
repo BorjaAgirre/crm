@@ -45,6 +45,8 @@ class PersonaController extends AbstractController
     {
         return $this->render('persona/show.html.twig', [
             'persona' => $persona,
+            'relacionespersona' => $persona->getRelacionpersonas(),
+            'relacionescolectivo' => $persona->getRelacioncolectivos(),
         ]);
     }
 

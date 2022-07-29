@@ -65,7 +65,7 @@ class Relacionpersona
 
     public function __toString(): string
     {
-        $tostring = $this->Persona1->getNombre()." -> ".$this->Persona2->getNombre().
+        $tostring = $this->Persona1->getNombre()." ".$this->Persona1->getApellidos()." -> ".$this->Persona2->getNombre().
             " (".$this->Tiporelacion->getTipo().")";
         return $tostring;
     }
