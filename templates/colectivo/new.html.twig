@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Colectivo{% endblock %}
+
+{% block body %}
+    <h1>Create new Colectivo</h1>
+
+    {{ include('colectivo/_form.html.twig') }}
+
+    <a href="{{ path('app_colectivo_index') }}">back to list</a>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Relacionpersona{% endblock %}
+
+{% block body %}
+    <h1>Relacionpersona</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ relacionpersona.id }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_relacionpersona_index') }}">back to list</a>
+
+    <a href="{{ path('app_relacionpersona_edit', {'id': relacionpersona.id}) }}">edit</a>
+
+    {{ include('relacionpersona/_delete_form.html.twig') }}
+{% endblock %}

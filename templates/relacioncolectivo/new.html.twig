@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Relacioncolectivo{% endblock %}
+
+{% block body %}
+    <h1>Create new Relacioncolectivo</h1>
+
+    {{ include('relacioncolectivo/_form.html.twig') }}
+
+    <a href="{{ path('app_relacioncolectivo_index') }}">back to list</a>
+{% endblock %}

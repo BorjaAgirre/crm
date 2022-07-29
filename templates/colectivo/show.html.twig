@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Colectivo{% endblock %}
+
+{% block body %}
+    <h1>Colectivo</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ colectivo.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ colectivo.Nombre }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_colectivo_index') }}">back to list</a>
+
+    <a href="{{ path('app_colectivo_edit', {'id': colectivo.id}) }}">edit</a>
+
+    {{ include('colectivo/_delete_form.html.twig') }}
+{% endblock %}

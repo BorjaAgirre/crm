@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Colectivo{% endblock %}
+
+{% block body %}
+    <h1>Edit Colectivo</h1>
+
+    {{ include('colectivo/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_colectivo_index') }}">back to list</a>
+
+    {{ include('colectivo/_delete_form.html.twig') }}
+{% endblock %}

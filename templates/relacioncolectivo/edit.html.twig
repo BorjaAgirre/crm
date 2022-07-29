@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Relacioncolectivo{% endblock %}
+
+{% block body %}
+    <h1>Edit Relacioncolectivo</h1>
+
+    {{ include('relacioncolectivo/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_relacioncolectivo_index') }}">back to list</a>
+
+    {{ include('relacioncolectivo/_delete_form.html.twig') }}
+{% endblock %}

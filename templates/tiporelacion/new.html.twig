@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Tiporelacion{% endblock %}
+
+{% block body %}
+    <h1>Create new Tiporelacion</h1>
+
+    {{ include('tiporelacion/_form.html.twig') }}
+
+    <a href="{{ path('app_tiporelacion_index') }}">back to list</a>
+{% endblock %}

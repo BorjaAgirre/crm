@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Colectivo index{% endblock %}
+
+{% block body %}
+    <h1>Colectivo index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for colectivo in colectivos %}
+            <tr>
+                <td>{{ colectivo.id }}</td>
+                <td>{{ colectivo.Nombre }}</td>
+                <td>
+                    <a href="{{ path('app_colectivo_show', {'id': colectivo.id}) }}">show</a>
+                    <a href="{{ path('app_colectivo_edit', {'id': colectivo.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_colectivo_new') }}">Create new</a>
+{% endblock %}
